@@ -48,7 +48,10 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.cache.CacheMiddleware',#Added by me
 )
+
+CACHE_BACKEND = "locmem://"
 
 ROOT_URLCONF = 'pasteproject.urls'
 
